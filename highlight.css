@@ -1,0 +1,125 @@
+/* Flower-Colors Theme v1.2.5
+ *
+ * https://github.com/flower-colors/highlightjs
+ *
+ * Copyright 2019, All rights reserved
+ *
+ * Code licensed under the MIT license
+ *
+ * @author zollero <corona7@163.com>
+ */
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 1em;
+    background: #38384E;   /* 颜色1 */
+    color: #B2C7D8;  /* 颜色2 */
+    font-family: "Source Code Pro",Consolas,Menlo,Monaco,"Courier New",monospace;
+    font-size: 0.9em;
+    line-height: 1.5;
+    border-radius: 5px;
+}
+.hljs > *::selection {
+    background-color: #3e4451;  /* 颜色3 */
+}
+
+.hljs-comment {
+    color: #9B9B9B;  /* 颜色4 */
+    font-style: italic;
+}
+
+.hljs-selector-tag {
+    color: #C792EA;   /* 颜色5 */
+}
+
+.hljs-string,
+.hljs-subst {
+    color: #C3E88D;  /* 颜色6 */
+}
+
+.hljs-number,
+.hljs-regexp,
+.hljs-variable,
+.hljs-template-variable {
+    color: #F77669;  /* 颜色7 */
+}
+
+.hljs-keyword {
+    color: #C792EA;  /* 颜色5 */
+}
+.hljs-function > .hljs-title {
+    color: #75A5FF;  /* 颜色8 */
+}
+.hljs-tag {
+    color: #abb2bf;  /* 颜色9 */
+}
+.hljs-name {
+    color: #e06c75;  /* 颜色10 */
+}
+.hljs-type {
+    color: #da4939;  /* 颜色11 */
+}
+
+.hljs-attribute {
+    color: #80CBBF;  /* 颜色12 */
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-link {
+    color: #C792EA;    /* 颜色5 */
+}
+
+.hljs-params {
+    color: #EEFFF7;  /* 颜色13 */
+}
+
+
+.hljs-meta {
+    color: #75A5FF;  /* 颜色8 */
+}
+
+.hljs-title {
+    color: #75A5FF;  /* 颜色8 */
+}
+
+.hljs-section {
+    color: #ffc66d;  /* 颜色14 */
+}
+
+.hljs-addition {
+    background-color: #144212;  /* 颜色15 */
+    color: #e6e1dc;  /* 颜色17 */
+    display: inline-block;
+    width: 100%;
+}
+
+.hljs-deletion {
+    background-color: #600;  /* 颜色16 */
+    color: #e6e1dc;  /* 颜色17 */
+    display: inline-block;
+    width: 100%;
+}
+
+.hljs-selector-class {
+    color: #FFCB68;  /* 颜色18 */
+}
+
+.hljs-selector-id {
+    color: #F77669;  /* 颜色7 */
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-strong {
+    font-weight: bold;
+}
+
+.hljs-link {
+    text-decoration: underline;
+}
