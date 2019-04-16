@@ -11,20 +11,20 @@
 
 :root {
     --root-bg: #d0dcd9;
-    --root-color: #3d80b9;
+    --root-color: #407aab;
     --selection: #a8bbe4;
     --comment: #8aa4b7;
     --selector-tag: #8f61ad;
     --string: #18add2;
     --varible: #d6392a;
     --keyword: #c1a536;
-    --function-title: #6d9ffd;
+    --function-title: #1f5dd2;
     --tag: #2e7eb9;
-    --name: #394cb7;
+    --name: #4157d2;
     --type: #a7463b;
-    --attribute: #3f9e8f;
+    --attribute: #27b19b;
     --link: #C792EA;
-    --params: #2e860a;
+    --params: #428627;
     --title: #7fa3e6;
     --section: #ffc66d;
     --addition-bg: #144212;
