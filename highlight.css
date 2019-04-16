@@ -9,60 +9,86 @@
  * @author zollero <corona7@163.com>
  */
 
+:root {
+    --root-bg: #d0dcd9;
+    --root-color: #3d80b9;
+    --selection: #a8bbe4;
+    --comment: #8aa4b7;
+    --selector-tag: #8f61ad;
+    --string: #18add2;
+    --varible: #d6392a;
+    --keyword: #c1a536;
+    --function-title: #6d9ffd;
+    --tag: #2e7eb9;
+    --name: #394cb7;
+    --type: #a7463b;
+    --attribute: #3f9e8f;
+    --link: #C792EA;
+    --params: #2e860a;
+    --title: #7fa3e6;
+    --section: #ffc66d;
+    --addition-bg: #144212;
+    --addition-color: #ded4c9;
+    --deletion-bg: #600;
+    --deletion-color: #e6e1dc;
+    --selection-class: #FFCB68;
+    --selection-id: #F77669;
+}
+
 .hljs {
     display: block;
     overflow-x: auto;
     padding: 1em;
-    background: #38384E;   /* 颜色1 */
-    color: #B2C7D8;  /* 颜色2 */
+    background: var(--root-bg);   /* 颜色1 */
+    color: var(--root-color);  /* 颜色2 */
     font-family: "Source Code Pro",Consolas,Menlo,Monaco,"Courier New",monospace;
     font-size: 0.9em;
     line-height: 1.5;
     border-radius: 5px;
 }
 .hljs > *::selection {
-    background-color: #3e4451;  /* 颜色3 */
+    background-color: var(--selection);  /* 颜色3 */
 }
 
 .hljs-comment {
-    color: #9B9B9B;  /* 颜色4 */
+    color: var(--comment);  /* 颜色4 */
     font-style: italic;
 }
 
 .hljs-selector-tag {
-    color: #C792EA;   /* 颜色5 */
+    color: var(--selector-tag);   /* 颜色5 */
 }
 
 .hljs-string,
 .hljs-subst {
-    color: #C3E88D;  /* 颜色6 */
+    color: var(--string);  /* 颜色6 */
 }
 
 .hljs-number,
 .hljs-regexp,
 .hljs-variable,
 .hljs-template-variable {
-    color: #F77669;  /* 颜色7 */
+    color: var(--varible);  /* 颜色7 */
 }
 
 .hljs-keyword {
-    color: #C792EA;  /* 颜色5 */
+    color: var(--keyword);  /* 颜色5 */
 }
 .hljs-function > .hljs-title {
-    color: #75A5FF;  /* 颜色8 */
+    color: var(--function-title);  /* 颜色8 */
 }
 .hljs-tag {
-    color: #abb2bf;  /* 颜色9 */
+    color: var(--tag);  /* 颜色9 */
 }
 .hljs-name {
-    color: #e06c75;  /* 颜色10 */
+    color: var(--name);  /* 颜色10 */
 }
 .hljs-type {
-    color: #da4939;  /* 颜色11 */
+    color: var(--type);  /* 颜色11 */
 }
 
 .hljs-attribute {
-    color: #80CBBF;  /* 颜色12 */
+    color: var(--attribute);  /* 颜色12 */
 }
 
 .hljs-symbol,
@@ -70,46 +96,46 @@
 .hljs-built_in,
 .hljs-builtin-name,
 .hljs-link {
-    color: #C792EA;    /* 颜色5 */
+    color: var(--link);    /* 颜色5 */
 }
 
 .hljs-params {
-    color: #EEFFF7;  /* 颜色13 */
+    color: var(--params);  /* 颜色13 */
 }
 
 
 .hljs-meta {
-    color: #75A5FF;  /* 颜色8 */
+    color: var(--title);  /* 颜色8 */
 }
 
 .hljs-title {
-    color: #75A5FF;  /* 颜色8 */
+    color: var(--title);  /* 颜色8 */
 }
 
 .hljs-section {
-    color: #ffc66d;  /* 颜色14 */
+    color: var(--section);  /* 颜色14 */
 }
 
 .hljs-addition {
-    background-color: #144212;  /* 颜色15 */
-    color: #e6e1dc;  /* 颜色17 */
+    background-color: var(--addition-bg);  /* 颜色15 */
+    color: var(--addition-color);  /* 颜色17 */
     display: inline-block;
     width: 100%;
 }
 
 .hljs-deletion {
-    background-color: #600;  /* 颜色16 */
-    color: #e6e1dc;  /* 颜色17 */
+    background-color: var(--deletion-bg);  /* 颜色16 */
+    color: var(--deletion-color);  /* 颜色17 */
     display: inline-block;
     width: 100%;
 }
 
 .hljs-selector-class {
-    color: #FFCB68;  /* 颜色18 */
+    color: var(--selection-class);  /* 颜色18 */
 }
 
 .hljs-selector-id {
-    color: #F77669;  /* 颜色7 */
+    color: var(--selection-id);  /* 颜色7 */
 }
 
 .hljs-emphasis {

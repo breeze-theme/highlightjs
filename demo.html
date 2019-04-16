@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./highlight.css">
+</head>
+<body>
+    <div><pre><code class="jsx language-jsx hljs javascript"><span class="hljs-comment">// index.js</span>
+<span class="hljs-keyword">import</span> { mount, route, lazy } <span class="hljs-keyword">from</span> <span class="hljs-string">'navi'</span>
+<span class="hljs-keyword">import</span> React, { Suspense } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>
+<span class="hljs-keyword">import</span> { Router, View } <span class="hljs-keyword">from</span> <span class="hljs-string">'react-navi'</span>
+<span class="hljs-keyword">import</span> api <span class="hljs-keyword">from</span> <span class="hljs-string">'./api'</span>
+<span class="hljs-keyword">import</span> Landing <span class="hljs-keyword">from</span> <span class="hljs-string">'./Landing'</span>
+<span class="hljs-keyword">import</span> Layout <span class="hljs-keyword">from</span> <span class="hljs-string">'./Layout'</span>
+
+<span class="hljs-keyword">const</span> routes =
+    mount({
+    <span class="hljs-string">'/'</span>: route({
+        <span class="hljs-attr">title</span>: <span class="hljs-string">"Hats 'n' Flamethrowers 'r' Us"</span>,
+        <span class="hljs-attr">getData</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> api.fetchProducts(),
+        <span class="hljs-attr">view</span>: <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Landing</span> /&gt;</span>,
+    }),
+    '/product': lazy(() =&gt; import('./product')),
+    })
+
+ReactDOM.render(
+    <span class="hljs-tag">&lt;<span class="hljs-name">Router</span> <span class="hljs-attr">routes</span>=<span class="hljs-string">{routes}</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Layout</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{null}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">View</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Suspense</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Layout</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Router</span>&gt;</span>,
+    document.getElementById('root')
+)
+</span></code></pre>
+    </div>
+
+    <div><pre><code class="hljs python"><span class="hljs-meta">@requires_authorization</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">somefunc</span><span class="hljs-params">(param1=<span class="hljs-string">''</span>, param2=<span class="hljs-number">0</span>)</span>:</span>
+    <span class="hljs-string">r'''A docstring'''</span>
+    <span class="hljs-keyword">if</span> param1 &gt; param2: <span class="hljs-comment"># interesting</span>
+        <span class="hljs-keyword">print</span> <span class="hljs-string">'Gre\'ater'</span>
+    <span class="hljs-keyword">return</span> (param2 - param1 + <span class="hljs-number">1</span> + <span class="hljs-number">0b10l</span>) <span class="hljs-keyword">or</span> <span class="hljs-literal">None</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SomeClass</span>:</span>
+    <span class="hljs-keyword">pass</span>
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>message = <span class="hljs-string">'''interpreter
+<span class="hljs-meta">... </span>prompt'''</span>
+</code></pre></div>
+
+<div><pre><code class="hljs xml"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css"><span class="hljs-selector-tag">body</span> {<span class="hljs-attribute">width</span>: <span class="hljs-number">500px</span>;}</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"application/javascript"</span>&gt;</span><span class="javascript">
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">$init</span>(<span class="hljs-params"></span>) </span>{<span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">checked</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'title'</span>&gt;</span>Title<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- here goes the rest of the page --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre></div>
+</body>
+</html>
