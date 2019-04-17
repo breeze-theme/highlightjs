@@ -1,6 +1,6 @@
-/* Flower-Colors Theme v1.2.5
+/* Breeze Theme v1.0.0
  *
- * https://github.com/flower-colors/highlightjs
+ * https://github.com/breeze-theme/highlightjs
  *
  * Copyright 2019, All rights reserved
  *
@@ -9,7 +9,7 @@
  * @author zollero <corona7@163.com>
  */
 
-:root {
+.hljs {
     --root-bg: #d0dcd9;
     --root-color: #407aab;
     --selection: #a8bbe4;
