@@ -9,9 +9,12 @@
  * @author zollero <corona7@163.com>
  */
 
-.hljs {
-    --root-bg: #d0dcd9;
+:root {
+    --root-bg: #eef5f3;
     --root-color: #407aab;
+}
+
+.hljs {
     --selection: #a8bbe4;
     --comment: #8aa4b7;
     --selector-tag: #8f61ad;
@@ -33,6 +36,17 @@
     --deletion-color: #e6e1dc;
     --selection-class: #FFCB68;
     --selection-id: #F77669;
+}
+
+pre > code[class*="language-"] {
+    display: block;
+    color: var(--root-color);
+    background-color: var(--root-bg);
+    padding: 1em;
+    font-size: 0.9em;
+    line-height: 1.5;
+    border-radius: 5px;
+    font-family: "Source Code Pro",Consolas,Menlo,Monaco,"Courier New",monospace;
 }
 
 .hljs {
